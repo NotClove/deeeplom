@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: clove
+    groups: sudo
+    shell: /bin/bash
+    sudo: 'ALL=(ALL) NOPASSWD:ALL'
+    ssh-authorized-keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPGd2S3dhZQHtLUS8OOOixiGLfAVtsLVZnRgQm8Kqm+r clove@Clovebook.local
